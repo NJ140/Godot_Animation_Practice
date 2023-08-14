@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Ability" load_steps=2 format=3 uid="uid://xhh7l6ggxyd8"]
+
+[ext_resource type="Script" path="res://scripts/ability.gd" id="1_ref8n"]
+
+[resource]
+script = ExtResource("1_ref8n")
+weapon_animation_name = &"weapon_animations/"
+extra_damage = 0

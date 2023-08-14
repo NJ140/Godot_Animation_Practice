@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6sb0xs4n3t1k"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_md3k5"]
+[ext_resource type="PackedScene" uid="uid://de3jh5ks57iin" path="res://Scenes/weapon.tscn" id="2_l7et6"]
+[ext_resource type="Resource" uid="uid://ceaf4uwphcguv" path="res://Abilities/Slash.tres" id="2_m5e5o"]
+[ext_resource type="Resource" uid="uid://ndcnxc5nf6jl" path="res://Abilities/Thrust.tres" id="3_sphqt"]
+
+[node name="CharacterBody2D" type="Node2D"]
+script = ExtResource("1_md3k5")
+abilities = Array[Resource("res://scripts/ability.gd")]([ExtResource("2_m5e5o"), ExtResource("3_sphqt")])
+
+[node name="Placeholder" type="ColorRect" parent="."]
+offset_left = -13.0
+offset_top = -20.0
+offset_right = 13.0
+offset_bottom = 20.0
+color = Color(0, 0, 1, 1)
+
+[node name="Weapon" parent="." instance=ExtResource("2_l7et6")]
+scale = Vector2(0.5, 0.5)
